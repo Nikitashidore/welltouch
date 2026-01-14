@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellTouch – Natural Therapy & Massage Centre</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #6a3c8c;     /* Royal Purple */
+            --secondary: #e7d9c6;   /* Luxury Beige */
+            --gold: #d4af37;        /* Gold */
+            --soft-bg: #faf6f0;
+            --text-dark: #3a2b3c;
+        }
+
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: beige;  /* plain solid color */
+    color: var(--text-dark);
+}
+
+
+        /* HERO SECTION */
+        header {
+            background: 
+            linear-gradient(rgba(40, 0, 65, 0.6), rgba(40, 0, 65, 0.6)),
+            url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1600') 
+            center/cover no-repeat;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 62px;
+            margin: 0;
+            color: #f1d371;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: var(--gold);
+            color: black;
+            text-decoration: none;
+            border-radius: 40px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #f5d772;
+            transform: scale(1.05);
+        }
+
+        /* SECTION STYLING */
+        section {
+            padding: 70px 20px;
+            max-width: 1100px;
+            margin: auto;
+            animation: fadeUp 1s ease;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 10px;
+        }
+       
+
+        /* CARD BLOCK */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 6px solid var(--gold);
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;   /* Makes the image cover the area */
+    object-position: center; /* Keeps the important part centered */
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 10px;
+            text-align: center;
+            margin-top: 50px;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to   {opacity: 1;}
+        }
+
+        @keyframes fadeUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to   {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WellTouch</h1>
+        <p>Natural Therapy & Massage Centre<br>
+        Healing Touch. Natural Care. Total Wellness.</p>
+
+        <a class="btn" href="tel:9156531191">📞 Call Now: 9156531191</a>
+        <br><br>
+        <a class="btn" href="https://wa.me/9156531191">💬 WhatsApp Us</a>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <div class="card">
+            <img src="WhatsApp Image 2026-01-14 at 8.15.27 PM.jpeg" alt="WellTouch Clinic Environment">
+            <p>
+                WellTouch – Natural Therapy & Massage Centre helps clients recover from pain, stress, injuries,
+                and chronic conditions using natural, safe, and effective healing therapies.
+            </p>
+
+            <ul>
+                <li>Traditional healing methods</li>
+                <li>Advanced physiotherapy</li>
+                <li>Yoga & pranayama practices</li>
+                <li>Therapeutic massage techniques</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Natural Therapies</h2>
+
+        <div class="card">
+            <img src="aqu.jpg" alt="Acupressure Therapy">
+            <h3>Acupressure</h3>
+            <p>Releases energy blockages through targeted pressure, ensuring deep relaxation and significant pain relief.</p>
+        </div>
+
+        <div class="card">
+            <img src="Cup.jpeg" alt="Cupping Therapy">
+            <h3>Cupping Therapy</h3>
+            <p>Improves blood flow, reduces inflammation, and removes toxins using ancient suction techniques.</p>
+        </div>
+
+        <div class="card">
+            <img src="Mud Therapy.jpeg" alt="Mud Therapy">
+            <h3>Mud Therapy</h3>
+            <p>Natural cooling and detoxification to restore body balance and mineralize the skin.</p>
+        </div>
+
+        <div class="card">
+            <img src="Scrub.jpeg" alt="Body Scrub">
+            <h3>Body Scrub</h3>
+            <p>Removes dead skin, improves glow, and rejuvenates the body through natural exfoliation.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Advanced Physiotherapy</h2>
+
+        <div class="card">
+            <img src="IFT.jpeg" alt="IFT Therapy">
+            <h3>IFT Therapy</h3>
+            <p>Interferential Therapy (IFT) uses deep tissue electrical stimulation for accelerated healing and pain relief.</p>
+        </div>
+
+        <div class="card">
+            <img src="Ultr Sound.jpeg" alt="Ultrasound Therapy">
+            <h3>Ultrasound Therapy</h3>
+            <p>Uses high-frequency sound waves to repair muscle and joint injuries at a cellular level.</p>
+        </div>
+
+        <div class="card">
+            <img src="tens.jpg" alt="TENS Therapy">
+            <h3>TENS Therapy</h3>
+            <p>Transcutaneous Electrical Nerve Stimulation blocks pain signals and improves nerve response effectively.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Yoga & Wellness</h2>
+         <div class="card">
+            <img src="yoga.jpg" alt="yoga">
+            <h3>Personal Yoga Class</h3>
+            <p>A personal yoga offers one-on-one guidance tailored to your body type, health needs, and personal goals. It helps improve flexibility, strength, balance, and mental relaxation through customized yoga practices.</p>
+        </div>
+        <div class="card">
+            <img src="strect.jpg" alt="Stretching Therapy">
+            <h3>Stretching Therapy</h3>
+            <p>Guided movements to improve flexibility, range of motion, and posture.</p>
+        </div>
+
+        <div class="card">
+            <img src="Pranayam.jpeg" alt="Pranayama">
+            <h3>Pranayama</h3>
+            <p>Controlled breathing techniques to calm the mind and improve lung capacity.</p>
+        </div>
+
+        <div class="card">
+            <img src="Medication.jpeg" alt="Meditation">
+            <h3>Meditation</h3>
+            <p>Stress relief & emotional balance.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Massage Menu</h2>
+
+        <div class="card">
+            <img src="DEEP.jpeg" alt="Deep Tissue Massage">
+            <h3>Deep Tissue Massage</h3>
+            <p>Focuses on realigning deeper layers of muscles and connective tissue to release chronic tension.</p>
+        </div>
+
+        <div class="card">
+            <img src="LY Massage.jpeg" alt="Lymphatic Massage">
+            <h3>Lymphatic Massage</h3>
+            <p>Detoxifies & boosts immunity.</p>
+        </div>
+
+        <div class="card">
+            <img src="Auryvedic.jpeg"Ayurvedic Massage">
+            <h3>Ayurvedic Massage</h3>
+            <p>Traditional herbal oil massage (Abhyanga) to balance your Doshas and internal systems.</p>
+        </div>
+
+        <div class="card">
+            <img src="Sign.jpeg" alt="Signature WellTouch Massage">
+            <h3>Signature WellTouch Massage</h3>
+            <p>Custom blend designed exclusively by WellTouch.</p>
+        </div>
+
+        <div class="card">
+            <img src="swwedish.jpg" alt="Swedish Massage">
+            <h3>Swedish Massage</h3>
+            <p>Classic relaxation experience.</p>
+        </div>
+
+        <div class="card">
+            <img src="Aroma.jpeg" alt="Aroma Massage">
+            <h3>Aroma Massage</h3>
+            <p>Healing with essential oils.</p>
+        </div>
+
+        <div class="card">
+            <img src="Hotsand therapy.jpeg" alt="Hot Sand Massage">
+            <h3>Hot Sand Massage</h3>
+            <p>Traditional warm herbal potli treatment specifically for joint pain and stiff muscles.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Clinical Treatments</h2>
+
+        <div class="card">
+             <img src="body.jpg" alt="Acupressure Therapy">
+
+            <h3>Body Pain</h3>
+            <p>Back, knee, shoulder & neck pain treatment.</p>
+        </div>
+
+        <div class="card">
+             <img src="Spondi.jpeg" alt="Acupressure Therapy">
+            
+            <h3>Spondylitis</h3>
+            <p>Natural solutions to improve spine mobility.</p>
+        </div>
+
+        <div class="card">
+                         <img src="Sctica.jpeg" alt="Acupressure Therapy">
+
+            <h3>Sciatica</h3>
+            <p>Relief from nerve compression & radiating pain.</p>
+        </div>
+
+        <div class="card">
+                         <img src="DISK.jpeg" alt="Acupressure Therapy">
+
+            <h3>Disc Bulge</h3>
+            <p>Non-surgical spinal therapy.</p>
+        </div>
+
+        <div class="card">
+             <img src="paralysi.jpg" alt="Acupressure Therapy">
+
+            <h3>Paralysis Rehab</h3>
+            <p>Recovery-focused therapy programs.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Book Your Appointment</h2>
+        <div class="card">
+            <p><strong>📍 Location:</strong> WellTouch, Near Kharadi</p>
+            <p><strong>📞 Phone:</strong> 9156531191</p>
+            <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/9156531191" style="color:var(--primary); font-weight:bold;">Click to Chat</a></p>
+
+            <a class="btn" href="tel:9156531191">Call Now</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WellTouch – Natural Therapy & Massage Centre | Near Kharadi  
+        <br>Call: 9156531191
+    </footer>
+
+</body>
+</html>
